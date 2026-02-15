@@ -12,7 +12,6 @@ namespace APIVerve.API.URLTitle
     {
         /// <summary>
         /// The URL of the web page to get the title of
-        /// Example: https://www.myspace.com
         /// </summary>
         [JsonProperty("url")]
         public string Url { get; set; }
