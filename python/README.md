@@ -219,8 +219,9 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient
 
 api = UrltitleAPIClient("[YOUR_API_KEY]")
 
+query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+
 try:
-    query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
     result = api.execute(query)
     print(result)
 finally:
