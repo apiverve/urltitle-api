@@ -26,7 +26,7 @@ Add the dependency:
 
 ```gradle
 dependencies {
-    implementation 'com.github.apiverve:urltitle-api:1.1.13'
+    implementation 'com.github.apiverve:urltitle-api:1.1.14'
 }
 ```
 
@@ -47,7 +47,7 @@ URLTitleAPIClient client = new URLTitleAPIClient("YOUR_API_KEY");
 try {
     // Prepare request parameters
     Map<String, Object> parameters = new HashMap<>();
-    parameters.put("url", "https://www.myspace.com");
+    parameters.put("url", "https://blog.apiverve.com/chuck-norris-api-how-to");
 
     // Execute the request
     APIResponse response = client.execute(parameters);
