@@ -4,17 +4,29 @@ declare module '@apiverve/urltitle' {
     secure?: boolean;
   }
 
+  /**
+   * Describes fields the current plan does not unlock. Locked fields arrive as null
+   * in `data`; `locked_fields` names them, using dot paths for nested fields.
+   * Absent when the plan unlocks everything.
+   */
+  export interface PremiumInfo {
+    message: string;
+    upgrade_url: string;
+    locked_fields: string[];
+  }
+
   export interface urltitleResponse {
     status: string;
     error: string | null;
     data: URLTitleData;
     code?: number;
+    premium?: PremiumInfo;
   }
 
 
   interface URLTitleData {
-      title: string;
-      h1:    string[];
+      title: null | string;
+      h1:    (null | string)[];
   }
 
   export default class urltitleWrapper {
