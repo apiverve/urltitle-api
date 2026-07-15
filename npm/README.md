@@ -122,9 +122,9 @@ async function makeRequest() {
   "status": "ok",
   "error": null,
   "data": {
-    "title": "Google Joins $250 Million Deal to Support Newsrooms in California - The New York Times",
+    "title": "Chuck Norris API: How to Easily Add Jokes to Your App - APIVerve Blog",
     "h1": [
-      "Google Joins $250 Million Deal to Support Newsrooms in California"
+      "Chuck Norris API: How to Easily Add Jokes to Your App"
     ]
   }
 }
