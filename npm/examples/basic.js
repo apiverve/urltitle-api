@@ -15,7 +15,7 @@ const api = new urltitleAPI({
 
 // Example query
 var query = {
-  "url": "https://blog.apiverve.com/chuck-norris-api-how-to"
+  "url": "https://en.wikipedia.org/wiki/HTML_element"
 };
 
 // Make the API request using callback

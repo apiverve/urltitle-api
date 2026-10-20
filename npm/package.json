@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/urltitle",
-  "version": "1.2.0",
-  "description": "URL Title is a simple tool for getting the title of a web page. It returns the title of the web page based on the URL provided.",
+  "version": "1.2.2",
+  "description": "URL Title fetches the HTML title tag of any web page in real time from a target URL. Paid plans also retrieve an array of every H1 heading tag found on the page.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "url title", "url title api", "url title tool", "url title software", "url title service"
+    "url title api", "extract page title", "get web page title", "get title from url", "fetch html title"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/urltitle-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/urltitle?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/urltitle?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
