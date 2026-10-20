@@ -2,8 +2,9 @@ openapi: 3.0.4
 info:
   title: URL Title
   description: >-
-    URL Title is a simple tool for getting the title of a web page. It returns
-    the title of the web page based on the URL provided.
+    URL Title fetches the HTML title tag of any web page in real time from a
+    target URL. Paid plans also retrieve an array of every H1 heading tag found
+    on the page.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +19,7 @@ servers:
 paths:
   /v1/urltitle:
     post:
-      summary: Get Title of Web Page
+      summary: URL Title
       description: Get the title of a web page based on the URL
       operationId: urltitle
       parameters: []
@@ -43,11 +44,9 @@ paths:
                 status: ok
                 error: null
                 data:
-                  title: >-
-                    Chuck Norris API: How to Easily Add Jokes to Your App -
-                    APIVerve Blog
+                  title: HTML element - Wikipedia
                   h1:
-                    - 'Chuck Norris API: How to Easily Add Jokes to Your App'
+                    - HTML element
         '401':
           description: Your request was not authorized, or your API Key was invalid
         '404':
@@ -75,4 +74,4 @@ components:
 security:
   - api_key: []
 sampleRequest:
-  url: https://blog.apiverve.com/chuck-norris-api-how-to
+  url: https://en.wikipedia.org/wiki/HTML_element

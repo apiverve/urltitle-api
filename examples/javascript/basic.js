@@ -15,7 +15,7 @@ async function callURLTitleAPI() {
   try {
     // Request body
     const requestBody &#x3D; {
-    &quot;url&quot;: &quot;https://blog.apiverve.com/chuck-norris-api-how-to&quot;
+    &quot;url&quot;: &quot;https://en.wikipedia.org/wiki/HTML_element&quot;
 };
 
     const response = await fetch(API_URL, {

@@ -14,7 +14,7 @@ public class BasicExample {
         try {
             // Request body
             Map&lt;String, Object&gt; parameters &#x3D; new HashMap&lt;&gt;();
-        parameters.put(&quot;url&quot;, &quot;https://blog.apiverve.com/chuck-norris-api-how-to&quot;);
+        parameters.put(&quot;url&quot;, &quot;https://en.wikipedia.org/wiki/HTML_element&quot;);
 
             // Execute the API request
             APIResponse response = client.execute(parameters);

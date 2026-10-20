@@ -19,7 +19,7 @@ def call_urltitle_api():
     try:
         # Request body
         request_body &#x3D; {
-    &#x27;url&#x27;: &#x27;https://blog.apiverve.com/chuck-norris-api-how-to&#x27;
+    &#x27;url&#x27;: &#x27;https://en.wikipedia.org/wiki/HTML_element&#x27;
 }
 
         headers = {
