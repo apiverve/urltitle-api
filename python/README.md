@@ -1,13 +1,12 @@
 URL Title API
 ============
 
-URL Title is a simple tool for getting the title of a web page. It returns the title of the web page based on the URL provided.
+URL Title fetches the HTML title tag of any web page in real time from a target URL. Paid plans also retrieve an array of every H1 heading tag found on the page.
 
-![Build Status](https://img.shields.io/badge/build-passing-green)
-![Code Climate](https://img.shields.io/badge/maintainability-B-purple)
-![Prod Ready](https://img.shields.io/badge/production-ready-blue)
 
-This is a Python API Wrapper for the [URL Title API](https://apiverve.com/marketplace/urltitle?utm_source=pypi&utm_medium=readme)
+[![PyPI version](https://img.shields.io/pypi/v/apiverve-urltitle.svg)](https://pypi.org/project/apiverve-urltitle/)
+
+This is a Python wrapper for the [URL Title API](https://apiverve.com/marketplace/urltitle?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -29,8 +28,8 @@ pip3 install apiverve-urltitle
 
 ## Configuration
 
-Before using the urltitle API client, you have to setup your account and obtain your API Key.
-You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=readme)
+Before using the URL Title API client, you have to setup your account and obtain your API Key.
+You can get it by signing up at [https://apiverve.com](https://apiverve.com?utm_source=pypi&utm_medium=referral&utm_content=readme)
 
 ---
 
@@ -44,7 +43,7 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient
 # Initialize the client with your APIVerve API key
 api = UrltitleAPIClient("[YOUR_API_KEY]")
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 try:
     # Make the API call
@@ -60,7 +59,7 @@ except Exception as e:
 
 ## Usage
 
-The URL Title API documentation is found here: [https://docs.apiverve.com/ref/urltitle](https://docs.apiverve.com/ref/urltitle?utm_source=pypi&utm_medium=readme).
+The URL Title API documentation is found here: [https://docs.apiverve.com/ref/urltitle](https://docs.apiverve.com/ref/urltitle?utm_source=pypi&utm_medium=referral&utm_content=readme).
 You can find parameters, example responses, and status codes documented here.
 
 ### Setup
@@ -82,7 +81,7 @@ Using the API client, you can perform requests to the API.
 ###### Define Query
 
 ```python
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 ```
 
 ###### Simple Request
@@ -102,9 +101,9 @@ print(result)
   "status": "ok",
   "error": null,
   "data": {
-    "title": "Google Joins $250 Million Deal to Support Newsrooms in California - The New York Times",
+    "title": "HTML element - Wikipedia",
     "h1": [
-      "Google Joins $250 Million Deal to Support Newsrooms in California"
+      "HTML element"
     ]
   }
 }
@@ -123,7 +122,7 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient, UrltitleAPIClientErro
 
 api = UrltitleAPIClient("[YOUR_API_KEY]")
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 try:
     result = api.execute(query)
@@ -144,7 +143,7 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient, UrltitleAPIClientErro
 
 api = UrltitleAPIClient("[YOUR_API_KEY]")
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 try:
     result = api.execute(query)
@@ -178,7 +177,7 @@ The client supports the context manager protocol for automatic resource cleanup:
 ```python
 from apiverve_urltitle.apiClient import UrltitleAPIClient, UrltitleAPIClientError
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 # Using context manager ensures proper cleanup
 with UrltitleAPIClient("[YOUR_API_KEY]") as api:
@@ -204,7 +203,7 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient
 # Enable debug mode
 api = UrltitleAPIClient("[YOUR_API_KEY]", debug=True)
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 # Debug information will be printed to console
 result = api.execute(query)
@@ -219,7 +218,7 @@ from apiverve_urltitle.apiClient import UrltitleAPIClient
 
 api = UrltitleAPIClient("[YOUR_API_KEY]")
 
-query = { "url": "https://blog.apiverve.com/chuck-norris-api-how-to" }
+query = { "url": "https://en.wikipedia.org/wiki/HTML_element" }
 
 try:
     result = api.execute(query)
@@ -233,7 +232,7 @@ finally:
 
 ## Customer Support
 
-Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=readme).
+Need any assistance? [Get in touch with Customer Support](https://apiverve.com/contact?utm_source=pypi&utm_medium=referral&utm_content=readme).
 
 ---
 
@@ -244,12 +243,12 @@ Stay up to date by following [@apiverveHQ](https://twitter.com/apiverveHQ) on Tw
 
 ## Legal
 
-All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=readme) and all legal documents and agreements.
+All usage of the APIVerve website, API, and services is subject to the [APIVerve Terms of Service](https://apiverve.com/terms?utm_source=pypi&utm_medium=referral&utm_content=readme) and all legal documents and agreements.
 
 ---
 
 ## License
-Licensed under the The MIT License (MIT)
+Licensed under the MIT License (MIT)
 
 Copyright (&copy;) 2026 APIVerve, and EvlarSoft LLC
 
