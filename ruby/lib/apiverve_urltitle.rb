@@ -4,6 +4,6 @@ require_relative "apiverve_urltitle/client"
 
 module APIVerve
   module Urltitle
-    VERSION = "1.2.2"
+    VERSION = "1.2.3"
   end
 end
