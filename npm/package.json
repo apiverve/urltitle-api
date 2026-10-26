@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/urltitle",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "URL Title fetches the HTML title tag of any web page in real time from a target URL. Paid plans also retrieve an array of every H1 heading tag found on the page.",
   "main": "index.js",
   "types": "index.d.ts",
